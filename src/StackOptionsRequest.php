@@ -43,7 +43,7 @@ class StackOptionsRequest implements HttpKernelInterface {
       'allowedOrigins'      => ["*"],
       'exposedHeaders'      => false,
       'maxAge'              => false,
-      'supportsCredentials' => false,
+      'supportsCredentials' => true,
     ]);
 
     return $cors->handle($request, $type, $catch);
