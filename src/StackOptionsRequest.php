@@ -39,7 +39,7 @@ class StackOptionsRequest implements HttpKernelInterface {
   public function handle(Request $request, $type = self::MASTER_REQUEST, $catch = TRUE) {
     $cors = new Cors($this->app, [
       'allowedHeaders'      => ["*"],
-      'allowedMethods'      => ['DELETE', 'GET', 'POST', 'PUT'],
+      'allowedMethods'      => ['DELETE', 'GET', 'POST', 'PUT', 'PATCH'],
       'allowedOrigins'      => ["*"],
       'exposedHeaders'      => false,
       'maxAge'              => false,
